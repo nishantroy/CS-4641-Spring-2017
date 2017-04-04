@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout>
+   <Version Major="3" Minor="0"/>
+   <Frame StatusBarShowing="yes" TitlesShowing="yes">
+      <ToolBars>
+         <ToolBar Label="MATLAB" Name="Main" Showing="yes"/>
+         <RowBreak/>
+         <ToolBar Label="Shortcuts" Showing="yes"/>
+      </ToolBars>
+      <Location External="yes" Height="641" MaxHeight="770" MaxWidth="1280" Maximized="yes" Type="floating" Width="1024" X="128" Y="64"/>
+      <Split Orientation="leftRight" Position="772">
+         <Tabbed Placement="bottom" Selected="1">
+            <View Name="Current Directory" Title="Current Folder"/>
+            <Group Name="Editor" Title="Editor"/>
+         </Tabbed>
+         <View Name="Command Window" Title="Command Window"/>
+      </Split>
+   </Frame>
+   <Group Alphabetize="no" Dock="yes" Guest="no" Name="Editor" PropertyClass="com.mathworks.mde.editor.EditorGroup" SelectionOrder="25" Show="yes" ShowViews="no" Title="Editor">
+      <ToolBars>
+         <ToolBar Label="Editor" Name="Editor Toolbar" Showing="yes"/>
+         <RowBreak/>
+         <ToolBar Label="Editor Cell Mode" Name="Codepad" Showing="yes"/>
+      </ToolBars>
+      <Location Context="docked" Height="632" ParentHeight="651" ParentWidth="772" Path="WT" TabIndex="1" Type="nested" Width="772" Y="114"/>
+      <Location Context="nested" Height="632" ParentHeight="651" ParentWidth="772" Path="WT" TabIndex="1" Type="nested" Width="772" Y="114"/>
+      <Location Context="undocked" External="yes" Height="513" Maximized="yes" Type="floating" Width="800" X="238" Y="126"/>
+      <Location Context="document" Maximized="yes" Type="floating"/>
+      <Frame StatusBarShowing="yes" TitlesShowing="yes">
+         <Location External="yes" Height="513" MaxHeight="770" MaxWidth="1280" Maximized="yes" Type="floating" Width="800" X="238" Y="126"/>
+      </Frame>
+      <DocumentArea Arrangement="maximized" Bar="bottom" Empty="no" MaxBarWidth="160" Showing="no"/>
+   </Group>
+   <Group Alphabetize="no" Dock="yes" Guest="no" Name="Figures" PropertyClass="com.mathworks.hg.peer.FiguresGroup" Show="no" ShowViews="no" Title="Figures">
+      <Location Context="document" EntirelyVisible="yes" External="yes" Height="504" Type="floating" Width="576" X="109" Y="122"/>
+      <Split Orientation="topBottom" Position="0.667">
+         <Split Orientation="leftRight" Position="0.25">
+            <View Name="Figure Palette" Title=""/>
+            <Split Orientation="leftRight" Position="0.667">
+               <Documents Name="Figures" Title=""/>
+               <View Name="Plot Browser" Title=""/>
+            </Split>
+         </Split>
+         <View Name="Property Editor" Title=""/>
+      </Split>
+   </Group>
+   <Group Alphabetize="no" Dock="yes" Guest="no" Name="Web Browser" PropertyClass="com.mathworks.mde.webbrowser.WebBrowserGroup" Show="no" ShowViews="no" Title="Web Browser">
+      <Location Context="document" EntirelyVisible="yes" External="yes" Height="600" Type="floating" Width="600" X="45" Y="45"/>
+   </Group>
+   <Group Alphabetize="no" Dock="yes" Guest="no" Name="Array Editor" Show="no" ShowViews="no" Title="Variable Editor"/>
+   <Group Alphabetize="no" Dock="no" Guest="no" Name="File Comparisons" PropertyClass="com.mathworks.mde.difftool.DiffReportGroup" Show="no" ShowViews="no" Title="File and Folder Comparisons">
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Group>
+   <Client Class="com.mathworks.mde.cmdwin.CmdWin" Dock="yes" Guest="no" Name="Command Window" SelectionOrder="22" Show="yes" Singleton="yes" StatusBarShowing="yes" Title="Command Window">
+      <Location Context="docked" Height="651" ParentHeight="651" ParentWidth="1280" Path="E" Type="nested" Width="504" X="776" Y="95"/>
+      <Location Context="nested" Height="651" ParentHeight="651" ParentWidth="1280" Path="E" Type="nested" Width="504" X="776" Y="95"/>
+   </Client>
+   <Client Class="com.mathworks.mde.cmdhist.CmdHistoryWindow" Dock="no" Guest="no" Name="Command History" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Command History">
+      <Location Context="docked" Height="651" ParentHeight="651" ParentWidth="1240" Path="E" Type="nested" Width="331" X="929" Y="95">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="905">
+               <View Name="Command Window" Title="Command Window"/>
+               <View Name="Command History" Title="Command History"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="undocked" EntirelyVisible="yes" External="yes" Height="288" Type="floating" Width="480" X="65" Y="65"/>
+      <Location Context="nested" Height="651" ParentHeight="651" ParentWidth="1240" Path="E" Type="nested" Width="331" X="929" Y="95">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="905">
+               <View Name="Command Window" Title="Command Window"/>
+               <View Name="Command History" Title="Command History"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+   </Client>
+   <Client Class="com.mathworks.mde.explorer.Explorer" Dock="yes" Guest="no" Name="Current Directory" SelectionOrder="20" Show="yes" Singleton="yes" StatusBarShowing="yes" Title="Current Folder">
+      <Location Context="docked" Height="632" ParentHeight="651" ParentWidth="772" Path="WT" TabIndex="0" Type="nested" Width="772" Y="114"/>
+      <Location Context="nested" Height="632" ParentHeight="651" ParentWidth="772" Path="WT" TabIndex="0" Type="nested" Width="772" Y="114"/>
+   </Client>
+   <Client Class="com.mathworks.mde.workspace.WorkspaceBrowser" Dock="no" Guest="no" Name="Workspace" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Workspace">
+      <ToolBars>
+         <ToolBar Label="Workspace" Name="Workspace" Showing="yes"/>
+      </ToolBars>
+      <Location Context="docked" Height="651" ParentHeight="651" ParentWidth="1260" Path="E" Type="nested" Width="636" X="644" Y="95">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="620">
+               <View Name="Command Window" Title="Command Window"/>
+               <View Name="Workspace" Title="Workspace"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+      <Location Context="undocked" EntirelyVisible="yes" External="yes" Height="288" Type="floating" Width="480" X="85" Y="85"/>
+      <Location Context="nested" Height="651" ParentHeight="651" ParentWidth="1260" Path="E" Type="nested" Width="636" X="644" Y="95">
+         <ReferenceHierarchy>
+            <Split Orientation="leftRight" Position="620">
+               <View Name="Command Window" Title="Command Window"/>
+               <View Name="Workspace" Title="Workspace"/>
+            </Split>
+         </ReferenceHierarchy>
+      </Location>
+   </Client>
+   <Client Class="com.mathworks.mde.help.HelpBrowser" Dock="no" Guest="no" Name="Help" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Help">
+      <Location Context="docked" Path="EWN" Type="nested"/>
+      <Location Context="undocked" External="yes" Height="600" Maximized="yes" Type="floating" Width="800" X="5" Y="5"/>
+   </Client>
+   <Client Class="com.mathworks.mde.profiler.Profiler" Dock="no" Guest="no" Name="Profiler" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Profiler">
+      <Location Context="docked" Path="EWN" Type="nested"/>
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Client>
+   <Client Class="com.mathworks.webintegration.fileexchange.ui.FileExchangeDesktopClientImpl" Dock="yes" Guest="no" Name="File Exchange" Show="no" Singleton="yes" StatusBarShowing="yes" Title="File Exchange">
+      <Location Context="docked" Path="EWN" Type="nested"/>
+      <Location Context="undocked" External="yes" Height="600" Type="floating" Width="800"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.FigurePalette" Dock="yes" Group="Figures" Guest="no" Name="Figure Palette" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Figure Palette">
+      <Location Context="docked" Path="NW" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.PlotBrowser" Dock="yes" Group="Figures" Guest="no" Name="Plot Browser" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Plot Browser">
+      <Location Context="docked" Path="NEE" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.page.plottool.PropertyEditor" Dock="yes" Group="Figures" Guest="no" Name="Property Editor" Show="no" Singleton="yes" StatusBarShowing="yes" Title="Property Editor">
+      <Location Context="docked" Path="S" Type="nested"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="10" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\makeICA.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\makeICA.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="15" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn2.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn2.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="9" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn3.asv">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn3.asv"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="12" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn4.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn4.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="13" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn6.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn6.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="14" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn7.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn7.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="11" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="16" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\nn3.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\nn3.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="18" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat\makePCA.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat\makePCA.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="21" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\mfeat-zernike\makeICA.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\mfeat-zernike\makeICA.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="17" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\letters\fastica.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\letters\fastica.m"/>
+   </Client>
+   <Client Class="com.mathworks.mde.editor.EditorViewClient" Dock="yes" Group="Editor" Guest="no" SelectionOrder="19" Show="yes" Singleton="no" StatusBarShowing="yes" Title="C:\Users\Public\MatlabWork\assignment3\letters\makeICA.m">
+      <Location Context="docked" Maximized="yes" Type="floating"/>
+      <Location Context="floatingIn" Maximized="yes" Type="floating"/>
+      <ClientData EditorFileName="C:\Users\Public\MatlabWork\assignment3\letters\makeICA.m"/>
+   </Client>
+</Layout>
